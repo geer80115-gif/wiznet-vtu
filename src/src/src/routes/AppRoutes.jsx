@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Landing from "../pages/Landing";
 import Dashboard from "../pages/Dashboard";
 import Register from "../pages/Register";
-
+import Login from "../pages/Login";
 export default function AppRoutes(){
 
   return (
@@ -17,6 +17,10 @@ export default function AppRoutes(){
 <Route
   path="/register"
   element={<Register />}
+/>
+      <Route
+  path="/login"
+  element={<Login />}
 />
       <Route 
         path="/dashboard" 
