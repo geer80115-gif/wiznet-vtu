@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Landing from "../pages/Landing";
 import Dashboard from "../pages/Dashboard";
-
+import Register from "../pages/Register";
 
 export default function AppRoutes(){
 
@@ -14,7 +14,10 @@ export default function AppRoutes(){
         path="/" 
         element={<Landing />} 
       />
-
+<Route
+  path="/register"
+  element={<Register />}
+/>
       <Route 
         path="/dashboard" 
         element={<Dashboard />} 
