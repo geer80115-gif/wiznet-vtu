@@ -9,6 +9,7 @@ import VerifyEmail from "../pages/VerifyEmail";
 import Wallet from "../pages/Wallet";
 import BuyAirtime from "../pages/BuyAirtime";
 import BuyData from "../pages/BuyData";
+import Transactions from "../pages/Transactions";
 export default function AppRoutes(){
 
   return (
@@ -46,6 +47,10 @@ export default function AppRoutes(){
       <Route
   path="/buy-data"
   element={<BuyData />}
+/>
+      <Route
+  path="/transactions"
+  element={<Transactions />}
 />
       <Route 
         path="/dashboard" 
