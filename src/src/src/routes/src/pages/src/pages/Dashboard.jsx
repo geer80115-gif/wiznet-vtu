@@ -34,57 +34,29 @@ Buy Airtime, Data and Pay Bills Instantly.
 <div>
 
 
-<div>
-<h2>
-Wallet
-</h2>
-<p>
-₦0.00
-</p>
+<div className="cards">
+
+<div className="card">
+<h2>Wallet</h2>
+<p>₦0.00</p>
 </div>
 
 
-<div>
-<h2>
-Buy Airtime
-</h2>
-<p>
-Quick airtime purchase
-</p>
+<div className="card">
+<h2>Buy Airtime</h2>
+<p>Instant airtime purchase</p>
 </div>
 
 
-<div>
-<h2>
-Buy Data
-</h2>
-<p>
-Affordable data plans
-</p>
+<div className="card">
+<h2>Buy Data</h2>
+<p>Affordable data bundles</p>
 </div>
 
 
-<div>
-<h2>
-Transactions
-</h2>
-<p>
-View your history
-</p>
+<div className="card">
+<h2>Transactions</h2>
+<p>Track your payments</p>
 </div>
 
-
 </div>
-
-
-</main>
-
-
-</div>
-
-
-</div>
-
-);
-
-}
