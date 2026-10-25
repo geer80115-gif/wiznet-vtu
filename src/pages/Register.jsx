@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../firebase/config";
 
 
 export default function Register(){
@@ -7,13 +9,27 @@ const [email,setEmail] = useState("");
 const [password,setPassword] = useState("");
 
 
-function handleRegister(e){
+async function handleRegister(e){
 
 e.preventDefault();
 
-alert(
-"Registration system will connect to Firebase next."
+try{
+
+await createUserWithEmailAndPassword(
+auth,
+email,
+password
 );
+
+alert("Account created successfully!");
+
+}
+
+catch(error){
+
+alert(error.message);
+
+}
 
 }
 
@@ -63,9 +79,7 @@ onChange={(e)=>setPassword(e.target.value)}
 
 
 <button>
-
 Register
-
 </button>
 
 
