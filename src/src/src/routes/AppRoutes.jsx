@@ -6,6 +6,7 @@ import Register from "../pages/Register";
 import Login from "../pages/Login";
 import ForgotPassword from "../pages/ForgotPassword";
 import VerifyEmail from "../pages/VerifyEmail";
+import Wallet from "../pages/Wallet";
 export default function AppRoutes(){
 
   return (
@@ -31,6 +32,10 @@ export default function AppRoutes(){
       <Route
   path="/verify-email"
   element={<VerifyEmail />}
+/>
+      <Route
+  path="/wallet"
+  element={<Wallet />}
 />
       <Route 
         path="/dashboard" 
