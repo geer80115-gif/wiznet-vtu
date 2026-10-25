@@ -5,6 +5,7 @@ import Dashboard from "../pages/Dashboard";
 import Register from "../pages/Register";
 import Login from "../pages/Login";
 import ForgotPassword from "../pages/ForgotPassword";
+import VerifyEmail from "../pages/VerifyEmail";
 export default function AppRoutes(){
 
   return (
@@ -26,6 +27,10 @@ export default function AppRoutes(){
       <Route
   path="/forgot-password"
   element={<ForgotPassword />}
+/>
+      <Route
+  path="/verify-email"
+  element={<VerifyEmail />}
 />
       <Route 
         path="/dashboard" 
