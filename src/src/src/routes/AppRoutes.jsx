@@ -7,6 +7,7 @@ import Login from "../pages/Login";
 import ForgotPassword from "../pages/ForgotPassword";
 import VerifyEmail from "../pages/VerifyEmail";
 import Wallet from "../pages/Wallet";
+import BuyAirtime from "../pages/BuyAirtime";
 export default function AppRoutes(){
 
   return (
@@ -36,6 +37,10 @@ export default function AppRoutes(){
       <Route
   path="/wallet"
   element={<Wallet />}
+/>
+      <Route
+  path="/buy-airtime"
+  element={<BuyAirtime />}
 />
       <Route 
         path="/dashboard" 
