@@ -8,6 +8,7 @@ import ForgotPassword from "../pages/ForgotPassword";
 import VerifyEmail from "../pages/VerifyEmail";
 import Wallet from "../pages/Wallet";
 import BuyAirtime from "../pages/BuyAirtime";
+import BuyData from "../pages/BuyData";
 export default function AppRoutes(){
 
   return (
@@ -41,6 +42,10 @@ export default function AppRoutes(){
       <Route
   path="/buy-airtime"
   element={<BuyAirtime />}
+/>
+      <Route
+  path="/buy-data"
+  element={<BuyData />}
 />
       <Route 
         path="/dashboard" 
