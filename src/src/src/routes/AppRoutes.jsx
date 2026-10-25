@@ -10,6 +10,8 @@ import Wallet from "../pages/Wallet";
 import BuyAirtime from "../pages/BuyAirtime";
 import BuyData from "../pages/BuyData";
 import Transactions from "../pages/Transactions";
+import Profile from "../pages/Profile";
+import ChangePassword from "../pages/ChangePassword";
 export default function AppRoutes(){
 
   return (
@@ -51,6 +53,15 @@ export default function AppRoutes(){
       <Route
   path="/transactions"
   element={<Transactions />}
+/>
+      <Route
+  path="/profile"
+  element={<Profile />}
+/>
+
+<Route
+  path="/change-password"
+  element={<ChangePassword />}
 />
       <Route 
         path="/dashboard" 
